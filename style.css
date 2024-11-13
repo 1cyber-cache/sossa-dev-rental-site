@@ -1,0 +1,320 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+}   
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/*Typography*/
+h2, .search-bar::placeholder, .mission{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    display: block;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-style: normal;
+    animation: h1slides 1.5s ease-in-out ;
+    animation-duration: 1.5s;
+    font-size: 3rem;
+}
+header{
+    z-index: 110;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    padding: .4rem;
+}   
+.search-bar{
+    border: none;
+    border-radius: 3px;
+    padding: .4rem;
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.hero{
+    height: 100vh;
+    background-image: url('pexels-joegun-18009675.jpg');
+    
+    padding-top: 3rem;
+    background-size: cover;
+    background-position-x: calc( 5rem - 95px);
+    background-repeat: no-repeat;
+    animation: background 1.5s ease-in;
+    position: relative;
+}
+
+.text1{
+    padding-left: 1.5rem;
+}
+.text2{
+    padding-left: .5rem;
+}
+.text3{
+    padding-left: 6.5rem;
+}
+.text4{
+    padding-left: 1rem;
+}
+
+@keyframes h1slides{
+    0%{
+        opacity: 0;
+        padding-left: 0;
+    } 
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+@keyframes background{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes buttonslides{
+    0%{
+        opacity: 0;
+        left: 0;
+    }
+    100%{
+        opacity: 1;
+        left: 23%;
+    }
+}
+.order-car{
+    background-color: #333;
+    border: none;
+    padding: 1rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    position: absolute;
+    color: white;
+    letter-spacing: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: buttonslides 1s ease-in ;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    top: 30rem;
+    box-shadow: 2px 2px 3px gray;
+
+}
+.order-cont{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+marquee p{
+    font-weight: bold;
+    font-family: monospace;
+    display: inline;
+    margin-left: 20px;
+    color: black;
+}
+marquee{
+    background: rgb(238, 238, 230);
+    padding: .3rem;
+}
+.mission{
+    font-weight: light;
+    width: 70%;
+    align-self: center;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 2em;
+    box-shadow: 0 0 2px black;
+}
+.head, .fleet-head, .how{
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+}
+.fleet{
+    padding: .3em;
+    background-color: transparent;
+    margin-top: 0;
+}
+.category{
+    border: 1px lightslategray solid;
+    display: inline-block;
+    padding: 3px 5px;
+    border-radius: 20px;
+    margin: 0;
+    color: whitesmoke;
+}
+.fleet-head{
+    margin-bottom: 0;
+}
+span{
+    color: azure;
+    text-shadow: 0 0 2px black ;
+}
+.car-fleet img{
+    width: 80%;
+    display: block;
+    align-self: center;
+}
+.car-fleet{
+    background-color: azure;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    box-shadow: 2px 2px 5px black;
+}
+.model{
+    display: flex;
+    justify-content: space-between;
+}
+.car-fleet p{
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #333;
+}
+
+.brand{
+    font-weight: 900;
+    
+}
+.order{
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px gray;color: white;
+    letter-spacing: 3px; background-color: #333;
+    border: none;
+    padding: .5rem;   
+ 
+}
+.order-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fleet-cont{
+    background-color: #444444;
+    padding-bottom: 1.5rem;
+}
+.how-to{
+    width: 100%;
+}
+.how-to-car{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    float: right;
+ 
+}
+.how-to-bg{
+    float: right;
+    background-color: azure;
+    width: 68%;
+    height: 340px;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.how-img-cont{
+    margin-top: 1.5rem;
+}
+.li-first-child{
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+ol{
+    margin: 0;
+    
+}
+.ol-cont{
+    padding-right: .2em;
+    margin-top: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+    width: 70%;
+    display: flex;
+    align-self: center;
+}
+.newsletter{
+    box-shadow: 2px 2px 5px black;
+    padding: .5em;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 5px;
+    color: #333;
+    background-color: azure;
+    margin-top: 2.9em;
+    display: flex;
+    width: 90%;
+    align-self: center;
+    align-items: center;
+}
+#email{
+    margin-bottom: .5rem;
+    padding: .5em;
+    border-radius: 5px;
+    border: 1.4px black solid;
+    background: transparent;
+    color: #333;
+    backdrop-filter: blur(8px);
+}
+.submit{
+    background-color: #333;
+    border: 1px black solid;
+    color: white;
+    padding: .3em 1em;
+    border-radius: 20px;
+}
+
+footer{
+    background-color: azure;
+    margin-top: 6rem;
+    color: #333;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px white;
+}
+a{
+   margin-bottom: 1em;
+   text-decoration: none; 
+}
+
+.top{
+    font-size: 2rem;
+    font-weight: 900;
+    padding: .3em;
+    
+}
